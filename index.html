@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, minimum-scale=1.0">
+        <title>Flexbox Pricing Table</title>
+        <style>
+            body{
+                background-color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .main-container{
+                display:flex;
+                gap: 5em;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .container-a, .container-b, .container-c{
+                border-radius: 5%;
+                flex-basis: 300px;
+                text-align: center; 
+                padding: 15px; 
+                color: #FFD0D0;             
+            }
+
+            .main-container > * {
+                background-image: linear-gradient(red,blue);
+            }
+
+            .container-template{
+                font-size: 4em;
+                padding: 1rem;
+                font-weight:900;
+                padding-bottom: 0px;
+            }
+
+            .container-pricing{
+                display: flex;
+                justify-content: center;
+                height: 10vh;
+                padding-top: 0px;
+                padding-bottom: 10px;
+            }
+
+            .dollar{
+                font-size: 30px;
+                align-self: flex-start;
+            }
+
+            .price{
+                font-size: 50px;  
+                align-self: center; 
+                font-weight: 600;             
+            }
+
+            .time{
+                font-size: 20px;
+                align-self: flex-end;
+            }
+
+            .container-list{
+                list-style: none;
+                font-size: 20px;
+            }
+
+            .button{
+                border: none;
+                border-radius: 5px;
+                background-color: #EA1179;
+                cursor: pointer;
+                font-weight: 900;
+            }
+
+            .button:hover{
+                font-size: 2.5rem ;
+                border-radius: 25%;
+                background-color: #EA1179;
+                color:black;
+            }
+
+            @media (max-width:1250px) {
+                .main-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    flex-basis: 300px;
+                    height: 100%;
+                }
+
+                .main-container > * {
+                    width: 400px;
+                }
+            }
+
+        
+        </style>
+
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container-a">
+                <div class="container-template">Basic <hr /> </div>
+                <div class="container-pricing"> 
+                    <span class="dollar"> $ </span>
+                    <span class="price">11.99 </span>
+                    <span class="time"> /month </span>
+                </div>
+                <ul class="container-list">
+                    <li>✅ 10 GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>🚫 Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+            <div class="container-b">
+                <div class="container-template">Standard <hr /> </div>
+                <div class="container-pricing">
+                    <span class="dollar">$</span>
+                    <span class="price">19.99</span>
+                    <span class="time">/month</span>
+                </div> 
+                <ul class="container-list">
+                    <li>✅ 50 GB Storage</li>
+                    <li>✅ 5 User</li>
+                    <li>✅ Phone & Email Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+            <div class="container-c">
+                <div class="container-template">Premium <hr /> </div>
+                <div class="container-pricing">
+                    <span class="dollar">$</span>
+                    <span class="price">49.99</span>
+                    <span class="time">/month</span>
+                </div> 
+                <ul class="container-list">
+                    <li>✅ 100 GB Storage</li>
+                    <li>✅ 10 User</li>
+                    <li>✅ 24/7 Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+        </div>
+    </body>
+</html>
+
