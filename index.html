@@ -16,10 +16,13 @@
                 align-items: center;
                 height: 100vh;
             }
-            .container-a, .container-b, .container-c{
+            .container-a, .container-b, .container-c {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 border-radius: 5%;
                 flex-basis: 300px;
-                text-align: center; 
                 padding: 15px; 
                 color: #FFD0D0;             
             }
@@ -96,11 +99,11 @@
         <div class="main-container">
             <div class="container-a">
                 <div class="container-template">Basic <hr /> </div>
-                <div class="container-pricing"> 
-                    <span class="dollar"> $ </span>
-                    <span class="price">11.99 </span>
-                    <span class="time"> /month </span>
-                </div>
+                <div class="container-pricing">
+                    <span class="dollar">$</span>
+                    <span class="price">11.99</span>
+                    <span class="time">/month</span>
+                </div> 
                 <ul class="container-list">
                     <li>✅ 10 GB Storage</li>
                     <li>✅ 1 User</li>
