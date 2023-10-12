@@ -6,7 +6,7 @@
         <title>Flexbox Pricing Table</title>
         <style>
             body{
-                background-color: #FF7676;
+                background-color: #FFCD4B;
                 font-family: 'Montserrat', sans-serif;
             }
             .main-container{
@@ -27,7 +27,7 @@
                 color: #FFD0D0;             
             }
             .main-container > * {
-                background-image: linear-gradient(#FFCD4B, #0802A3);
+                background-image: linear-gradient(#0802A3, #FF7676);
             }
             .container-template{
                 font-size: 4em;
@@ -66,7 +66,7 @@
             .button{
                 border: none;
                 border-radius: 5px;
-                background-color: #EA1179;
+                background-color: #FFCD4B;
                 cursor: pointer;
                 font-weight: 900;
             }
@@ -82,10 +82,11 @@
                 .main-container{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    align-content: center;
-                    flex-basis: 300px;
-                    height: 100%;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-basis: 100px;
+                    min-height: 100%;
+                    margin-left: 75px;
                 }
                 .container-a, .container-b, .container-c {
                     width: 250px;
